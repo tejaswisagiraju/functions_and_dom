@@ -15,6 +15,26 @@ Try the following exercises in the browser.
   };
   ```
 
+```
+
+  var arr = [1,2,3]
+
+  var swap = function (arr,indexOne, indexTwo) {
+
+    var value = arr[indexOne]
+    arr[indexOne] = arr[indexTwo]; 
+    arr[indexTwo] = value 
+    
+    return arr;
+  }
+
+  swap(arr,0,1);
+
+  console.log(arr);
+
+
+```
+
 * Write a function to generate a random number in a specified range.
 
   ```
@@ -24,6 +44,21 @@ Try the following exercises in the browser.
     return randNum;
   };
   ```
+
+```
+
+  var getRand = function (low, high) {
+    
+    var randNum = Math.random() * (high - low + 1) + low;
+
+    return randNum;
+};
+
+getRand(5,6);
+
+
+
+```
 
 * Write a function to create a specified number of random numbers from `1` to `100` in an array.
 
@@ -35,16 +70,40 @@ Try the following exercises in the browser.
   }
   ```
 
+
+
 * Write a function to find the maximum number in an array.
 
-  ```
+```
   var getMax = function (arr) {
     // your work
     
     return max;
   }
 
-  ```
+```
+
+```
+
+  var array = [6,4,9,8,7];
+
+  var getMax = function (arr) {
+    
+    var maximumNumber = arr[0];
+    for (var i =1; i< arr.length; i++) {
+      if (arr[i] > maximumNumber) {
+        maximumNumber = arr[i];
+      } 
+    }  
+  
+  return maximumNumber;
+  
+  }
+
+  console.log(getMax(array));
+
+
+```
 
 
 
